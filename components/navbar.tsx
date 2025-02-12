@@ -15,7 +15,7 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { Home, LandPlot, Calendar, Phone, Menu } from "lucide-react";
+import { Home, LandPlot, Calendar, Phone, Menu, Images } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -59,6 +59,17 @@ const Navbar = () => {
       >
         <Calendar className="mr-2 h-4 w-4" />
         Tee Times
+      </Button>
+
+      <Button
+        variant="ghost"
+        className={`text-white hover:bg-green-400 ${
+          isMobile ? "w-full justify-start my-2" : ""
+        }`}
+        onClick={() => isMobile && setIsOpen(false)}
+      >
+        <Images className="mr-2 h-4 w-4" />
+        Gallery
       </Button>
 
       <Button
