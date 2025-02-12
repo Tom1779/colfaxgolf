@@ -80,12 +80,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand Name */}
           <div className="flex-shrink-0">
-            <Image
-              src={"/logo/logo.jpg"}
-              alt={"alt"}
-              width={64}
-              height={64}
-            ></Image>
+            <Link href="/" passHref>
+              <Image
+                src={"/logo/logo.jpg"}
+                alt={"alt"}
+                width={64}
+                height={64}
+              ></Image>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
