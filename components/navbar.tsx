@@ -123,7 +123,7 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent
                 side="right"
-                className="w-64"
+                className="w-64 border-none"
                 style={{ backgroundColor: "#00db6e" }}
               >
                 <SheetTitle className="text-white px-0 py-0">Menu</SheetTitle>
